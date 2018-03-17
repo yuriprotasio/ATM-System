@@ -1,0 +1,21 @@
+<div class="content">
+	<h2>Bem vindo ao Caixa Eletrônico - Saque</h2>
+	{{cem}} notas de R$100 disponíveis<br>
+	{{cinquenta}} notas de R$50 disponíveis<br>
+	{{vinte}} notas de R$20 disponíveis<br>
+	{{dez}} notas de R$10 disponíveis<br><br>
+
+	<p>Informe abaixo o valor do saque</p>
+	<p>Valor: <input style="width: 100px;" type="text" maxlength="10" name="money" ng-model="money"></p>
+	<button ng-click="takeMoney(money)">Sacar</button>
+	<div ng-if="taken" class="successful">
+		<p>Foi sacado:<br> {{cemTaken}},<br> {{cinquentaTaken}},<br> {{vinteTaken}},<br> {{dezTaken}}.</p>
+	</div>
+	<div ng-if="error" class="failed">
+		<p>Saldo em notas insuficiente</p>
+	</div>
+	<div ng-if="saqueError" class="failed">
+		<p>Por favor, insira um número válido</p>
+		<p>Insira um valor múltiplo de 10</p>
+	</div>
+</div>

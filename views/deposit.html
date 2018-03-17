@@ -1,0 +1,26 @@
+<div class="content">
+	<h2>Bem vindo ao Caixa Eletrônico - Depósito</h2>
+
+	Notas de 100: {{cem}}<br>
+	Notas de 50: {{cinquenta}}<br>
+	Notas de 20: {{vinte}}<br>
+	Notas de 10: {{dez}}
+
+
+	<p>Informe abaixo a quantidade de notas a depositar</p>
+	Nota de: 
+	<select ng-model="cod">
+		<option value="100">R$ 100</option>
+		<option value="50">R$ 50</option>
+		<option value="20">R$ 20</option>
+		<option value="10">R$ 10</option>	
+	</select>
+	<p>Quantidade de notas: <input style="width: 50px" type="text" maxlength="4" ng-model="money"></p>
+	<button ng-click="putMoney(cod, money)">Depositar</button>
+	<div ng-if="inserted" class="successful">
+		<p>Foi inserido {{value}} {{notatext}} de {{codnota}} reais! </p>
+	</div>
+	<div ng-if="depositError" class="failed">
+		<p>Por favor, insira um número inteiro</p>
+	</div>
+</div>

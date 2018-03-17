@@ -1,0 +1,53 @@
+h2{
+	margin-top: 0;
+}
+.main-page{
+	background-color: #cce0ff;
+}
+.main-page .welcome{
+	background-color: #f2f2f2;
+	padding: 10px;
+	border-radius: 3px;
+	margin-top: 5%;
+}
+.main-page .menu{
+	background-color: #404040;
+
+	padding-left: 10px;
+	color: white;
+	font-size: 20px;
+}
+.main-page .menu a{
+	color: #99d6ff;
+	padding: 10px;
+	text-decoration: none;
+}
+.main-page .menu a:hover{
+	background-color: #404040;
+	
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+.content{
+	border: 3px solid #cccccc;
+	border-radius: 3px;
+	padding: 10px;
+	background-color: white;
+}
+
+.successful{
+	margin-top: 10px;
+	background-color: #009933;
+	color: white;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 2px;
+}
+.failed{
+	margin-top: 10px;
+	background-color: #b32400;
+	color: white;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 2px;
+}
