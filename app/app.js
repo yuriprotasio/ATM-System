@@ -43,7 +43,7 @@ CaixaApp.controller('CaixaAppController',function($scope, $http){
 	$scope.putMoney = function(codnota, value) {
 		let req = {
 			method: 'POST',
-			url: 'http://localhost:3000/addMoney',
+			url: 'http://167.99.106.221:80/addMoney',
 			headers: [{
 			  'Access-Control-Allow-Origin': '*'
 			},
@@ -75,7 +75,7 @@ CaixaApp.controller('CaixaAppController',function($scope, $http){
 	$scope.takeMoney = function($money){
 		let req = {
 			method: 'POST',
-			url: 'http://localhost:3000/getMoney',
+			url: 'http://167.99.106.221:80/getMoney',
 			headers: [{
 			  'Access-Control-Allow-Origin': '*'
 			},
@@ -107,7 +107,7 @@ CaixaApp.controller('CaixaAppController',function($scope, $http){
 		}
 	}
 	var init = function () {
-	   $http.get('http://localhost:3000/').then(function(response){
+	   $http.get('http://167.99.106.221:80/').then(function(response){
 	   		$scope.cem = response.data.cem;
 	   		$scope.cinquenta = response.data.cinquenta;
 	   		$scope.vinte = response.data.vinte;
