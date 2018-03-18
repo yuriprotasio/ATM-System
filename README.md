@@ -20,4 +20,6 @@ Now, type in the navigator the address of the system location in xampp. It is so
 Make sure your mongodb database is running and everything will work fine.
 
 ### All Urls
-- test
+- Access Online: http://167.99.111.199
+- Backend Repository: https://github.com/yuriprotasio/ATM-Backend.git
+- Client Repository: https://github.com/yuriprotasio/ATM-System.git
