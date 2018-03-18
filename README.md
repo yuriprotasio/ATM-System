@@ -20,3 +20,4 @@ Now, type in the navigator the address of the system location in xampp. It is so
 Make sure your mongodb database is running and everything will work fine.
 
 ### All Urls
+- test
